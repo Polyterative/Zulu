@@ -1,27 +1,17 @@
-# Zulu
+# Low Resolution Interface Experiment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+An Angular experiment exploring a low-resolution interface with keyboard-only navigation. Inspired by Elektron devices
+and minimalist design.
 
-## Development server
+# Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project is a work in progress and is intended to be a simple proof-of-concept, rather than a complete solution. It
+explores a minimalist interface design with a aesthetic inspired by Elektron devices.
 
-## Code scaffolding
+The project uses a low-resolution interface and keyboard-only navigation to create a unique user experience. It will be
+expanded upon in the future to explore additional features and functionality.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Note
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This project is a work in progress and not a complete solution. Features may not work as intended and the project may be
+updated or changed at any time.
