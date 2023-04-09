@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@font-face {
+  font-family: 'LCD Solid';
+  src: url('/assets/font/LcdSolid-VPzB.ttf') format('truetype');
+}
+
+body {
+  font-family: 'LCD Solid';
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+}

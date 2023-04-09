@@ -1,0 +1,20 @@
+<div fxFlex="auto"
+     fxLayout="row"
+     fxLayoutGap="1rem"
+>
+  <div fxFlex="grow"
+  >
+    commands
+  </div>
+  <div fxFlex="auto"
+       fxLayout="row"
+       fxLayoutGap="1rem"
+  >
+    <ng-container *ngFor="let item of dataService.permanentEntities$|async">
+      <div fxFlex="auto"
+      >
+        <app-navigator-entity [item]="item"></app-navigator-entity>
+      </div>
+    </ng-container>
+  </div>
+</div>
