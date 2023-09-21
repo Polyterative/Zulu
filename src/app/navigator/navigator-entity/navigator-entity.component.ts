@@ -3,6 +3,12 @@ import { Subscription } from 'rxjs';
 import { NavigationEntity } from '../navigator-data.service';
 import { KeyboardService } from '../keyboard.service';
 
+interface NavigationTree {
+  previous?: NavigationTree;
+  next?: NavigationTree;
+  // Add other properties as needed
+}
+
 @Component({
   selector: 'app-navigator-entity',
   templateUrl: './navigator-entity.component.html',
@@ -10,7 +16,8 @@ import { KeyboardService } from '../keyboard.service';
 })
 export class NavigatorEntityComponent implements OnInit, OnDestroy {
   @Input() item!: NavigationEntity;
-  navigationTree: any;
+
+  navigationTree: NavigationTree | null;
   private leftKeySubscription: Subscription;
   private rightKeySubscription: Subscription;
 
