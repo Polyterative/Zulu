@@ -1,5 +1,3 @@
-import { Injectable, EventEmitter } from '@angular/core';
-
 import { Injectable, EventEmitter, OnDestroy } from '@angular/core';
 
 @Injectable({
