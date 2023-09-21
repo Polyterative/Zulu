@@ -26,9 +26,9 @@ describe('NavigatorEntityComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  // Assuming a new method has been added to the component
-  it('should call method1 when method2 is called', () => {
-    component.method2();
-    expect(mockService.method1).toHaveBeenCalled();
+  // Assuming the new methods added to the component are 'navigate' and 'updateEntity'
+  it('should call navigate when updateEntity is called', () => {
+    component.updateEntity();
+    expect(mockService.navigate).toHaveBeenCalled();
   });
 });
