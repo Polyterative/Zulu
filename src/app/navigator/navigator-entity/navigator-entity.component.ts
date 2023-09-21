@@ -16,10 +16,16 @@ export class NavigatorEntityComponent implements OnInit {
   ngOnInit() {
     this.keyboardService.leftKeyPressed.subscribe(() => {
       // Update navigation tree when left key is pressed
+      if (this.navigationTree && this.navigationTree.previous) {
+        this.navigationTree = this.navigationTree.previous;
+      }
     });
 
     this.keyboardService.rightKeyPressed.subscribe(() => {
       // Update navigation tree when right key is pressed
+      if (this.navigationTree && this.navigationTree.next) {
+        this.navigationTree = this.navigationTree.next;
+      }
     });
 
     // Parse JSON tree to create DOM structure
